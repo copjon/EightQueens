@@ -67,9 +67,9 @@ namespace EightQueens
                 //Spin through all pieces (but the last piece) and match against all other pieces.
                 //The last piece has already been matched against all other pieces. If no piece
                 //can attack it, it can't attack another piece.
-                for (int i = 0; i < 7; i++)
+                for (int i = 0; i < this.Queens.Count -1; i++)
                 {
-                    for (int j = i + 1; j < 8; j++)
+                    for (int j = i + 1; j < this.Queens.Count; j++)
                     {
                         if (Queens[i].CanAttack(Queens[j]))
                         {
