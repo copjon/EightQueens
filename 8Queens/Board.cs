@@ -73,12 +73,12 @@ namespace EightQueens
                     {
                         if (Queens[i].CanAttack(Queens[j]))
                         {
-                            return false;
+                            return true;
                         }
                     }
                 }
 
-                return true;
+                return false;
             }
         }
 
